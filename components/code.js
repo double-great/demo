@@ -6,12 +6,12 @@ import "codemirror/mode/markdown/markdown";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/material.css";
 
-export default (props) => {
+export default ({ handleChange }) => {
   const codeEditor = useRef(null);
 
   useEffect(() => {
     if (codeEditor.current && codeEditor.current) {
-      props.handleChange(codeEditor.current.props.value);
+      handleChange(codeEditor.current.props.value);
     }
   }, []);
 
@@ -40,7 +40,7 @@ Examples:
           lineWrapping: true,
           mode: "markdown",
         }}
-        onChange={(editor) => props.handleChange(editor.getValue())}
+        onChange={(editor) => handleChange(editor.getValue())}
       />
     </>
   );

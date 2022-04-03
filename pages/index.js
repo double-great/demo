@@ -5,6 +5,7 @@ import altText from "@double-great/remark-lint-alt-text";
 import { reporter } from "vfile-reporter";
 import dynamic from "next/dynamic";
 import Head from "next/head";
+
 const CodeWithCodemirror = dynamic(import("../components/code"), {
   ssr: false,
 });
@@ -30,7 +31,6 @@ const Playground = () => {
             </div>
           </div>
         </div>
-
         <div className="grid-right">
           <div className="error-wrapper">
             {errors ? <pre>{errors}</pre> : `no issues found`}

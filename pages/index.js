@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { remark } from "remark";
 import linkText from "@double-great/remark-lint-link-text";
 import altText from "@double-great/remark-lint-alt-text";
@@ -10,32 +10,11 @@ const CodeWithCodemirror = dynamic(import("../components/code"), {
 });
 
 const Demo = () => {
-  const [value, setValue] = useState(`# Demo
-
-Try out Double great plugins:
-
-[click here](https://double-great.dev)!
-
-![](business-chart.png)`);
   const [errors, setErrors] = useState();
 
-  useEffect(() => {
-    processProse(value);
-  }, []);
-
   function handleChange(value) {
-    setValue(value.getValue());
-    processProse(value.getValue());
-  }
-
-  function processProse(value) {
-    const errors = linkTextChecker(value);
-    setErrors(errors);
-  }
-
-  function linkTextChecker(value) {
     const file = remark().use(linkText).use(altText).processSync(value);
-    return reporter(file);
+    setErrors(reporter(file));
   }
 
   return (
@@ -47,7 +26,7 @@ Try out Double great plugins:
         <div className="grid-left">
           <div className="grid-control-wrapper">
             <div className="grid-control">
-              <CodeWithCodemirror handleChange={handleChange} value={value} />
+              <CodeWithCodemirror handleChange={handleChange} />
             </div>
           </div>
         </div>

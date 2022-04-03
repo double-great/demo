@@ -19,9 +19,8 @@ export default (props) => {
     <>
       <CodeMirror
         ref={codeEditor}
-        value={`# Demo
+        value={`# Double Great plugins
 
-Try out Double Great plugins:
 
 [click here](https://double-great.dev)!
 

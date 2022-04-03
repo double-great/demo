@@ -9,7 +9,7 @@ const CodeWithCodemirror = dynamic(import("../components/code"), {
   ssr: false,
 });
 
-const Demo = () => {
+const Playground = () => {
   const [errors, setErrors] = useState();
 
   function handleChange(value) {
@@ -20,7 +20,7 @@ const Demo = () => {
   return (
     <>
       <Head>
-        <title>Demos | Double Great</title>
+        <title>Playground | Double Great</title>
       </Head>
       <div className="grid-container">
         <div className="grid-left">
@@ -41,4 +41,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default Playground;

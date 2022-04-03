@@ -1,4 +1,4 @@
-# demo
+# Playground
 
 Try out Double Great plugins.
 
@@ -14,7 +14,7 @@ npm ci
 npm start
 ```
 
-Visit: http://localhost:3000/demo
+Visit: http://localhost:3000/playground
 
 ## Build
 
@@ -23,4 +23,4 @@ npm run build
 
 ```
 
-And commit all generated files
+And commit all generated files.

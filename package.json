@@ -1,0 +1,36 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Try out Double Great plugins.",
+  "main": "index.js",
+  "scripts": {
+    "start": "next dev",
+    "build": "next build && next export",
+    "lint": "next lint",
+    "prepare": "husky install"
+  },
+  "author": "@double-great",
+  "license": "MIT",
+  "dependencies": {
+    "@double-great/remark-lint-alt-text": "^1.0.0",
+    "@double-great/remark-lint-link-text": "^0.8.0",
+    "codemirror": "^5.65.2",
+    "next": "^12.1.4",
+    "react": "^18.0.0",
+    "react-codemirror2": "^7.2.1",
+    "react-dom": "^18.0.0",
+    "remark": "^14.0.2",
+    "vfile-reporter": "^7.0.4",
+    "vfile-reporter-pretty": "^6.1.0"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^12.1.4",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^7.0.0",
+    "prettier": "^2.6.2",
+    "pretty-quick": "^3.1.3"
+  }
+}

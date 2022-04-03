@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import "../css/style.css";
+import "../css/theme.css";
+import "../css/playground.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

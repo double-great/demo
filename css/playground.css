@@ -1,0 +1,31 @@
+@media screen and (min-width: 50em) {
+  .grid-container {
+    height: 100vh;
+    display: flex;
+    margin-bottom: 12px;
+  }
+
+  .grid-left,
+  .grid-right {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+  }
+
+  .react-codemirror2 {
+    display: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .error-wrapper,
+  .CodeMirror {
+    height: 100vh !important;
+  }
+}
+
+.error-wrapper {
+  padding: 12px;
+}

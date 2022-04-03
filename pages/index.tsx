@@ -25,11 +25,7 @@ const Playground = () => {
       </Head>
       <div className="grid-container">
         <div className="grid-left">
-          <div className="grid-control-wrapper">
-            <div className="grid-control">
-              <CodeWithCodemirror handleChange={handleChange} />
-            </div>
-          </div>
+          <CodeWithCodemirror handleChange={handleChange} />
         </div>
         <div className="grid-right">
           <div className="error-wrapper">

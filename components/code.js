@@ -21,7 +21,7 @@ export default (props) => {
         ref={codeEditor}
         value={`# Demo
 
-Try out Double great plugins:
+Try out Double Great plugins:
 
 [click here](https://double-great.dev)!
 

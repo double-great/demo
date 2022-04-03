@@ -11,9 +11,9 @@ const CodeWithCodemirror = dynamic(import("../components/code"), {
 });
 
 const Playground = () => {
-  const [errors, setErrors] = useState();
+  const [errors, setErrors] = useState("");
 
-  function handleChange(value) {
+  function handleChange(value: string) {
     const file = remark().use(linkText).use(altText).processSync(value);
     setErrors(reporter(file));
   }

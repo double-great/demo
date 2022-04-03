@@ -19,12 +19,21 @@ export default (props) => {
     <>
       <CodeMirror
         ref={codeEditor}
-        value={`# Double Great plugins
+        value={`# Double Great playground
 
+remark-lint-link-text warns against non-descriptive link text.
+Examples: 
+[click here](https://double-great.dev)
+[here](https://double-great.dev)
 
-[click here](https://double-great.dev)!
+remark-lint-alt-text warns against unhelpful or missing image alt text. 
+Examples: 
+![](business-chart.png)
+![A screenshot of a business chart.](business-chart.png)
 
-![](business-chart.png)`}
+*Copy and paste your markdown here to test each plugin.*
+
+`}
         options={{
           theme: "material",
           lineNumbers: true,

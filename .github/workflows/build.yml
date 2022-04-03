@@ -1,3 +1,5 @@
+name: Build
+
 on:
   push:
     branches:
@@ -13,7 +15,8 @@ jobs:
       - run: npm run build
       - name: Commit files
         run: |
+          git pull
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -A && git commit -m "Update site"
+          git add -A && git commit -m "💾" --no-verify
           git push

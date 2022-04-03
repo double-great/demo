@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import { UnControlled as CodeMirror } from "react-codemirror2";
 import "codemirror/mode/markdown/markdown";
 import "codemirror/lib/codemirror.css";
-import "codemirror/theme/material.css";
+import "codemirror/theme/dracula.css";
 
 export default ({ handleChange }) => {
   const codeEditor = useRef(null);
@@ -35,7 +35,7 @@ Examples:
 
 `}
         options={{
-          theme: "material",
+          theme: "dracula",
           lineNumbers: true,
           lineWrapping: true,
           mode: "markdown",

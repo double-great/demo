@@ -20,6 +20,7 @@
     "react-codemirror2": "^7.2.1",
     "react-dom": "^18.0.0",
     "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
     "vfile-reporter": "^7.0.4",
     "vfile-reporter-pretty": "^6.1.0"
   },

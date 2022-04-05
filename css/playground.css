@@ -1,31 +1,29 @@
+html {
+  background: #fff;
+}
 @media screen and (min-width: 50em) {
   .grid-container {
-    height: 100vh;
     display: flex;
-    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    height: 300px;
   }
 
   .grid-left,
   .grid-right {
     position: relative;
     width: 50%;
-    height: 100vh;
-  }
-
-  .react-codemirror2 {
-    display: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100%;
-  }
-
-  .error-wrapper,
-  .CodeMirror {
-    height: 100vh !important;
+    overflow-y: scroll;
   }
 }
 
+.preview-wrapper,
 .error-wrapper {
   padding: 12px;
+}
+
+.preview-wrapper h1 {
+  font-size: 1.25em;
+}
+.preview-wrapper img {
+  max-width: 50px;
 }

@@ -21,18 +21,13 @@ export default ({ handleChange }) => {
         ref={codeEditor}
         value={`# Double Great playground
 
-remark-lint-link-text warns against non-descriptive link text.
-Examples: 
-[click here](https://double-great.dev)
-[here](https://double-great.dev)
-
-remark-lint-alt-text warns against unhelpful or missing image alt text. 
-Examples: 
-![](business-chart.png)
-![A screenshot of a business chart.](business-chart.png)
-
 *Copy and paste your markdown here to test each plugin.*
 
+remark-lint-link-text warns against non-descriptive link text. Examples: 
+- [click here](https://double-great.dev/)
+- [read more](https://double-great.dev/remark-lint-link-text)
+
+remark-lint-alt-text warns against unhelpful or missing image alt text. Example: ![](chart.png)
 `}
         options={{
           theme: "dracula",

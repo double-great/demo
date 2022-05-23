@@ -14,7 +14,7 @@
   "dependencies": {
     "@double-great/remark-lint-alt-text": "^1.0.0",
     "@double-great/remark-lint-link-text": "^0.8.0",
-    "codemirror": "^5.65.3",
+    "codemirror": "^5.65.4",
     "next": "^12.1.6",
     "react": "^18.1.0",
     "react-codemirror2": "^7.2.1",

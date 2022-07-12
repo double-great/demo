@@ -1,12 +1,16 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/display-name */
 import React, { useEffect, useRef, useCallback } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { markdown, markdownLanguage } from "@codemirror/lang-markdown";
 import { dracula } from "@uiw/codemirror-theme-dracula";
 import { EditorView } from "@codemirror/view";
 
-export default ({ value, handleChange }) => {
+const Code = ({
+  value,
+  handleChange,
+}: {
+  value: string;
+  handleChange: (value: string) => void;
+}) => {
   const codeEditor = useRef(null);
 
   useEffect(() => {
@@ -31,3 +35,5 @@ export default ({ value, handleChange }) => {
     />
   );
 };
+
+export default Code;

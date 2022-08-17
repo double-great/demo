@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "next dev",
-    "build": "next build && next export",
+    "build": "next build && next export -o docs/ && touch docs/.nojekyll",
     "lint": "next lint",
     "prepare": "husky install"
   },

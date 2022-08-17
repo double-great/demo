@@ -3,15 +3,22 @@ import { remark } from "remark";
 import linkText from "@double-great/remark-lint-link-text";
 import altText from "@double-great/remark-lint-alt-text";
 import { reporter } from "vfile-reporter";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkHtml from "remark-html";
+import CodeWithCodemirror from "../components/code";
 
-const CodeWithCodemirror = dynamic(import("../components/code"), {
-  ssr: false,
-});
+const markdown = `# Double Great playground
+
+*Copy and paste your markdown here to test each plugin.*
+
+remark-lint-link-text warns against non-descriptive link text. Examples: 
+- [click here](https://double-great.dev/)
+- [read more](https://double-great.dev/remark-lint-link-text)
+
+remark-lint-alt-text warns against unhelpful or missing image alt text. Example: ![](chart.png)
+`;
 
 const Playground = () => {
   const [errors, setErrors] = useState("");
@@ -32,7 +39,7 @@ const Playground = () => {
       </Head>
       <div className="grid-container">
         <div className="grid-left">
-          <CodeWithCodemirror handleChange={handleChange} />
+          <CodeWithCodemirror value={markdown} handleChange={handleChange} />
         </div>
         <div className="grid-right">
           <div

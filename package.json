@@ -12,7 +12,7 @@
   "author": "@double-great",
   "license": "MIT",
   "dependencies": {
-    "@codemirror/lang-markdown": "^6.0.1",
+    "@codemirror/lang-markdown": "^6.0.5",
     "@double-great/remark-lint-alt-text": "^1.0.0",
     "@double-great/remark-lint-link-text": "^0.8.0",
     "@uiw/codemirror-theme-dracula": "^4.12.3",

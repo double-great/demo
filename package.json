@@ -16,7 +16,7 @@
     "@double-great/remark-lint-alt-text": "^1.0.0",
     "@double-great/remark-lint-link-text": "^0.8.0",
     "@uiw/codemirror-theme-dracula": "^4.12.3",
-    "@uiw/react-codemirror": "^4.15.1",
+    "@uiw/react-codemirror": "^4.19.5",
     "codemirror": "^6.0.1",
     "next": "^13.1.1",
     "react": "^18.2.0",

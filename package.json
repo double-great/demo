@@ -7,7 +7,8 @@
     "start": "next dev",
     "build": "next build && next export",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "npm run lint"
   },
   "author": "@double-great",
   "license": "MIT",
